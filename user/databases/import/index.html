@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../../../css/manual.css" type="text/css">
+    <link rel="stylesheet" href="../../../font/css/all.min.css" type="text/css">
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script src="../../../js/popper.min.js"></script>
+    <script src="../../../js/bootstrap.min.js"></script>
+    <title>Connect-CMSマニュアル</title>
+</head>
+<body class=" ">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark  " aria-label="ヘッダー">
+
+        <!-- Branding Image -->
+        <a class="navbar-brand" href="../../../index.html">
+            Connect-CMSマニュアル
+        </a>
+
+        
+        <div class="d-none d-md-block">
+            <span class="badge badge-pill badge-secondary mr-2">設計</span>
+<span class="badge badge-pill badge-info mr-2"><a href="../../../common/index.html" class="text-white">共通機能</a></span>
+<span class="badge badge-pill badge-danger mr-2"><a href="../../../manage/index.html" class="text-white">管理者メニュー</a></span>
+<span class="badge badge-pill badge-primary mr-2"><a href="../../../user/index.html" class="text-white">一般ユーザ機能</a></span>
+<span class="badge badge-pill badge-success mr-2">マイページ</span>
+<span class="badge badge-pill badge-warning mr-2">エラー説明</span>
+<span class="badge badge-pill badge-light mr-2">逆引き</span>
+        </div>
+
+        <!-- SmartPhone Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="メニュー">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav d-md-none">
+                <li class="nav-item">
+                    <a href="https://connect-cms.jp/" class="nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://connect-cms.jp/forum" class="nav-link">
+                        フォーラム<i class="fas fa-plus"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://connect-cms.jp/about" class="nav-link">
+                        Connect-CMSとは<i class="fas fa-plus"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+        <div class="container-fluid">
+        <div class="row mt-3">
+
+            <aside class="col-lg-2 order-1">
+                <nav class="list-group d-none d-lg-block">
+                    <div class="list-group">
+                                                    <a href="../../../user/contents/index.html"
+                                class="list-group-item
+                                                                ">
+                                固定記事
+                            </a>
+                                                                                <a href="../../../user/menus/index.html"
+                                class="list-group-item
+                                                                ">
+                                メニュー
+                            </a>
+                                                                                <a href="../../../user/blogs/index.html"
+                                class="list-group-item
+                                                                ">
+                                ブログ
+                            </a>
+                                                                                <a href="../../../user/calendars/index.html"
+                                class="list-group-item
+                                                                ">
+                                カレンダー
+                            </a>
+                                                                                <a href="../../../user/slideshows/index.html"
+                                class="list-group-item
+                                                                ">
+                                スライドショー
+                            </a>
+                                                                                <a href="../../../user/openingcalendars/index.html"
+                                class="list-group-item
+                                                                ">
+                                開館カレンダー
+                            </a>
+                                                                                <a href="../../../user/whatsnews/index.html"
+                                class="list-group-item
+                                                                ">
+                                新着情報
+                            </a>
+                                                                                <a href="../../../user/faqs/index.html"
+                                class="list-group-item
+                                                                ">
+                                FAQ
+                            </a>
+                                                                                <a href="../../../user/linklists/index.html"
+                                class="list-group-item
+                                                                ">
+                                リンクリスト
+                            </a>
+                                                                                <a href="../../../user/cabinets/index.html"
+                                class="list-group-item
+                                                                ">
+                                キャビネット
+                            </a>
+                                                                                <a href="../../../user/databases/index.html"
+                                class="list-group-item
+                                                                ">
+                                データベース
+                            </a>
+                                                            
+                                <a href="../../../user/databases/index/index.html"
+                                    class="list-group-item
+                                                                        ">
+                                    <i class="fas fa-chevron-right"></i>
+                                    コンテンツ一覧
+                                </a>
+
+                                
+                                                                    <a href="../../../user/databases/input/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        コンテンツ登録
+                                    </a>
+                                                                    <a href="../../../user/databases/detail/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        コンテンツ詳細
+                                    </a>
+                                                                    <a href="../../../user/databases/editColumn/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        カラム編集
+                                    </a>
+                                                                    <a href="../../../user/databases/editColumnDetail/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        カラム詳細編集
+                                    </a>
+                                                                    <a href="../../../user/databases/editView/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        表示設定
+                                    </a>
+                                                                    <a href="../../../user/databases/createBuckets/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        作成
+                                    </a>
+                                                                    <a href="../../../user/databases/listBuckets/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        選択
+                                    </a>
+                                                                    <a href="../../../user/databases/import/index.html"
+                                        class="list-group-item
+                                                                                            active
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        インポート
+                                    </a>
+                                                                    <a href="../../../user/databases/editBucketsMails/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        メール送信設定
+                                    </a>
+                                                                                                                <a href="../../../user/photoalbums/index.html"
+                                class="list-group-item
+                                                                ">
+                                フォトアルバム
+                            </a>
+                                                                                <a href="../../../user/opacs/index.html"
+                                class="list-group-item
+                                                                ">
+                                Opac
+                            </a>
+                                                                        </div>
+                </nav>
+            </aside>
+
+            <main class="col-lg-10 order-2" role="main">
+                    <div class="card">
+        <div class="card-header text-white bg-primary">データベース - インポート</div>
+        <div class="card-body">
+            <p>データをCSVでインポートできます。</p>
+            <p>追加、更新に対応しています。</p>
+        </div>
+    </div>
+
+        <div class="card mt-3">
+        <div class="card-header text-white bg-primary">画面</div>
+        <div class="card-body">
+                            <p>
+                                            【インポート】<br />
+                    
+                    
+                    <img src="../../../user/databases/import/images/import.png" class="img-fluid img-manual" style="max-width:980px;"
+                                            >
+
+                                            <div class="card bg-light">
+                            <div class="card-body">
+                                <ul class="mb-0"><li>インポート機能は、管理者用の機能です。<br />CSVファイルを使って、データベースへ一括登録できます。</li><li>CSVファイルの文字コードは<span style="color:#e83e8c;">Shift_JIS</span>, 又は<span style="color:#e83e8c;">UTF-8</span>です。<br />文字コードの自動検出は、<span style="color:#e83e8c;">Shift_JIS</span>, <span style="color:#e83e8c;">UTF-8</span>のいずれかを自動検出します。</li><li>CSVインポートは登録・更新・添付ファイルに対応しています。<br />添付ファイルは、下記「添付ファイル一括インポートの場合」を参照してください。</li></ul>
+                            </div>
+                        </div>
+                                    </p>
+                        <style>
+.pdf_table th {
+    background-color: #f2f2f2; 
+}
+</style>
+<div class="card" html_only>
+<div class="card-body" html_only>
+    <p>【CSVファイル項目説明】</p>
+    <table class="table table-striped table-sm table-bordered table_css pdf_table">
+    <tbody>
+        <tr>
+        <th style="width: 25%;">項目名</th>
+        <th style="width: 10%;">システム項目</th>
+        <th style="width: 10%;">設定した項目</th>
+        <th style="width: 55%;">説明</th>
+        </tr>
+        <tr>
+        <th>id</th>
+        <td>○</td>
+        <td></td>
+        <td>「id」が空の場合、登録します。<br>「id」がある場合、該当idで更新します。<br>idは「ダウンロード」機能から確認できます。</td>
+        </tr>
+        <tr>
+        <th>「1行文字列型」</th>
+        <td></td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr>
+        <th>「複数行文字列型」</th>
+        <td></td>
+        <td>○</td>
+        <td>Excelであれば、改行を入力する事ができます。<br>（改行を含む文字列は ” （ダブルクォーテーション） で囲みます。Excelでは自動対応されます）</td>
+        </tr>
+        <tr>
+        <th>「単一選択型」</th>
+        <td></td>
+        <td>○</td>
+        <td>選択肢の文字列と一致すると、インポートした後に選択状態になります。</td>
+        </tr>
+        <tr>
+        <th>「複数選択型」</th>
+        <td></td>
+        <td>○</td>
+        <td>選択肢の文字列と一致すると、インポートした後に選択状態になります。<br>複数項目を選択する場合、<code>|</code>（パイプ）区切りで記載します。</td>
+        </tr>
+        <tr>
+        <th>「リストボックス型」</th>
+        <td></td>
+        <td>○</td>
+        <td>選択肢の文字列と一致すると、インポートした後に選択状態になります。</td>
+        </tr>
+        <tr>
+        <th>「メールアドレス型」</th>
+        <td></td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr>
+        <th>「日付型」</th>
+        <td></td>
+        <td>○</td>
+        <td>日付はY/n/j形式（例：2021/6/7）です。</td>
+        </tr>
+        <tr>
+        <th>「複数年月型（テキスト入力）」</th>
+        <td></td>
+        <td>○</td>
+        <td>
+        <p>年月は yyyy/mm形式（例：2021/06）です。<br>複数入力する場合、<code style="font-size: 14px;">,</code>（カンマ）区切りで記載します。</p>
+        </td>
+        </tr>
+        <tr>
+        <th>「時間型」</th>
+        <td></td>
+        <td>○</td>
+        <td>
+        <p>時間はH:i形式（例：13:00）です。</p>
+        </td>
+        </tr>
+        <tr>
+        <th>「リンク型」</th>
+        <td></td>
+        <td>○</td>
+        <td>
+        <p></p>
+        </td>
+        </tr>
+        <tr>
+        <th>「ファイル型」</th>
+        <td></td>
+        <td>○</td>
+        <td>データは無視されます。</td>
+        </tr>
+        <tr>
+        <th>「動画型」</th>
+        <td></td>
+        <td>○</td>
+        <td>データは無視されます。</td>
+        </tr>
+        <tr>
+        <th>「画像型」</th>
+        <td></td>
+        <td>○</td>
+        <td>データは無視されます。</td>
+        </tr>
+        <tr>
+        <th>「ウィジウィグ型」</th>
+        <td></td>
+        <td>○</td>
+        <td></td>
+        </tr>
+        <tr>
+        <th>「登録日型」</th>
+        <td></td>
+        <td>○</td>
+        <td>データは無視されます。</td>
+        </tr>
+        <tr>
+        <th>「更新日型」</th>
+        <td></td>
+        <td>○</td>
+        <td>データは無視されます。</td>
+        </tr>
+        <tr>
+        <th>「公開日型」</th>
+        <td></td>
+        <td>○</td>
+        <td>データは無視されます。</td>
+        </tr>
+        <tr>
+        <th>「表示順型」</th>
+        <td></td>
+        <td>○</td>
+        <td>データは無視されます。</td>
+        </tr>
+        <tr>
+        <th>公開日時</th>
+        <td>○</td>
+        <td></td>
+        <td><span class="badge badge-danger">必須</span><br>日時はY/n/j H:i形式（例：2021/6/7 13:00）です。<br>※ Excelで日時を修正すると自動でこの形式に変換されます。</td>
+        </tr>
+        <tr>
+        <th>表示順</th>
+        <td>○</td>
+        <td></td>
+        <td>空の場合、表示順で最後に表示されるように自動登録します。</td>
+        </tr>
+    </tbody>
+    </table>
+</div html_only>
+</div html_only>
+
+<div class="card my-3" html_only>
+<div class="card-body" html_only>
+    <p>【添付ファイル一括インポートの場合】</p>
+    <ul>
+        <li>ZIPファイルに添付ファイルを含める事で、添付ファイルもあわせてインポートできます。</li>
+        <li>ZIPファイルに対応している場合、CVSファイル選択の下に「※ CSVファイル・ZIPファイルに対応しています。」メッセージが表示されます。<br>メッセージが表示されない場合、添付ファイル一括インポートに対応していません。<br>（phpのZipArchive有効時、ZIPファイルに対応します。）</li>
+    </ul>
+    <p>【添付ファイル一括インポートのZIP内フォルダ構成】</p>
+    <ul>
+        <li class="card-text">
+            ZIP内/<span style="color: #0000ff;">[database_folder]</span>/<span style="color: #008000;">[database_file]</span>.csv<br />
+            ZIP内/<span style="color: #0000ff;">[database_folder]</span>/<span style="color: #ff6600;">uploads</span>/xxxxx_01.jpg<br />
+            ZIP内/<span style="color: #0000ff;">[database_folder]</span>/<span style="color: #ff6600;">uploads</span>/xxxxx_02.jpg<br />
+            ZIP内/<span style="color: #0000ff;">[database_folder]</span>/<span style="color: #ff6600;">uploads</span>/xxxxx_yyyyyy.pdf<br /><br />
+            ※ ZIP内フォルダ名 <span style="color: #0000ff;">[database_folder]</span> は任意の名前（英数字記号）がつけれます。<br />
+            ※ CSVファイル名 <span style="color: #008000;">[database_file]</span>.csv は任意の名前（英数字記号）がつけれます。ZIP内フォルダ&nbsp;<span style="color: #0000ff;">[database_folder]</span> 下に含めるCSVファイルは1ファイルです。<br />
+            ※ <span style="color: #0000ff;">[database_folder]</span>/<span style="color: #ff6600;">uploads</span>/ の <span style="color: #ff6600;">uploads</span> は固定のフォルダ名です。ここに添付ファイルを入れてください。添付ファイル名は任意の名前（英数字記号）がつけれます。<br />
+            ※ ZIP内フォルダ名、CSVファイル名、添付ファイル名には日本語名は使えません。<br />
+            ※ windowsでフォルダをZIP圧縮すると、ZIP内にフォルダが1個作られるため、このフォルダ構成にしています。<br /><br />
+        </li>
+        <li class="card-text">
+            ZIP内/<span style="color: #008000;">[database_file]</span>.csv のファイル書き方<br /><br />
+            "uploads/xxxxx_01.jpg"<br />
+            "uploads/xxxxx_02.jpg"<br />
+            "uploads/xxxxx_yyyyyy.pdf"<br /><br />
+            ※ 対象ファイルが無いと入力チェックでエラーになります。
+        </li>
+    </ul>
+</div html_only>
+</div html_only>
+
+        </div>
+    </div>
+                </main>
+        </div>
+    </div>
+
+    <footer class="container">
+        <div class="card border-0 mt-2">
+            <div class="card-body">
+                <div class="text-center">
+                    <a href="https://connect-cms.jp" target="_blank">Powered by Connect-CMS</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

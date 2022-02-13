@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../../../css/manual.css" type="text/css">
+    <link rel="stylesheet" href="../../../font/css/all.min.css" type="text/css">
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script src="../../../js/popper.min.js"></script>
+    <script src="../../../js/bootstrap.min.js"></script>
+    <title>Connect-CMSマニュアル</title>
+</head>
+<body class=" ">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark  " aria-label="ヘッダー">
+
+        <!-- Branding Image -->
+        <a class="navbar-brand" href="../../../index.html">
+            Connect-CMSマニュアル
+        </a>
+
+        
+        <div class="d-none d-md-block">
+            <span class="badge badge-pill badge-secondary mr-2">設計</span>
+<span class="badge badge-pill badge-info mr-2"><a href="../../../common/index.html" class="text-white">共通機能</a></span>
+<span class="badge badge-pill badge-danger mr-2"><a href="../../../manage/index.html" class="text-white">管理者メニュー</a></span>
+<span class="badge badge-pill badge-primary mr-2"><a href="../../../user/index.html" class="text-white">一般ユーザ機能</a></span>
+<span class="badge badge-pill badge-success mr-2">マイページ</span>
+<span class="badge badge-pill badge-warning mr-2">エラー説明</span>
+<span class="badge badge-pill badge-light mr-2">逆引き</span>
+        </div>
+
+        <!-- SmartPhone Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="メニュー">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav d-md-none">
+                <li class="nav-item">
+                    <a href="https://connect-cms.jp/" class="nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://connect-cms.jp/forum" class="nav-link">
+                        フォーラム<i class="fas fa-plus"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://connect-cms.jp/about" class="nav-link">
+                        Connect-CMSとは<i class="fas fa-plus"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+        <div class="container-fluid">
+        <div class="row mt-3">
+
+            <aside class="col-lg-2 order-1">
+                <nav class="list-group d-none d-lg-block">
+                    <div class="list-group">
+                                                    <a href="../../../manage/index/index.html"
+                                class="list-group-item
+                                                                ">
+                                管理画面
+                            </a>
+                                                                                <a href="../../../manage/page/index.html"
+                                class="list-group-item
+                                                                ">
+                                ページ管理
+                            </a>
+                                                                                <a href="../../../manage/site/index.html"
+                                class="list-group-item
+                                                                ">
+                                サイト管理
+                            </a>
+                                                                                <a href="../../../manage/user/index.html"
+                                class="list-group-item
+                                                                ">
+                                ユーザ管理
+                            </a>
+                                                                                <a href="../../../manage/group/index.html"
+                                class="list-group-item
+                                                                ">
+                                グループ管理
+                            </a>
+                                                                                <a href="../../../manage/security/index.html"
+                                class="list-group-item
+                                                                ">
+                                セキュリティ管理
+                            </a>
+                                                                                <a href="../../../manage/plugin/index.html"
+                                class="list-group-item
+                                                                ">
+                                プラグイン管理
+                            </a>
+                                                                                <a href="../../../manage/system/index.html"
+                                class="list-group-item
+                                                                ">
+                                システム管理
+                            </a>
+                                                                                <a href="../../../manage/api/index.html"
+                                class="list-group-item
+                                                                ">
+                                API管理
+                            </a>
+                                                                                <a href="../../../manage/message/index.html"
+                                class="list-group-item
+                                                                ">
+                                メッセージ管理
+                            </a>
+                                                                                <a href="../../../manage/auth/index.html"
+                                class="list-group-item
+                                                                ">
+                                外部認証
+                            </a>
+                                                                                <a href="../../../manage/service/index.html"
+                                class="list-group-item
+                                                                ">
+                                外部サービス設定
+                            </a>
+                                                                                <a href="../../../manage/uploadfile/index.html"
+                                class="list-group-item
+                                                                ">
+                                アップロードファイル管理
+                            </a>
+                                                                                <a href="../../../manage/theme/index.html"
+                                class="list-group-item
+                                                                ">
+                                テーマ管理
+                            </a>
+                                                                                <a href="../../../manage/number/index.html"
+                                class="list-group-item
+                                                                ">
+                                連番管理
+                            </a>
+                                                                                <a href="../../../manage/code/index.html"
+                                class="list-group-item
+                                                                ">
+                                コード管理
+                            </a>
+                                                            
+                                <a href="../../../manage/code/index/index.html"
+                                    class="list-group-item
+                                                                                    active
+                                                                        ">
+                                    <i class="fas fa-chevron-right"></i>
+                                    コード一覧
+                                </a>
+
+                                
+                                                                    <a href="../../../manage/code/import/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        インポート
+                                    </a>
+                                                                    <a href="../../../manage/code/download/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        ダウンロード
+                                    </a>
+                                                                    <a href="../../../manage/code/regist/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        コード登録
+                                    </a>
+                                                                    <a href="../../../manage/code/edit/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        コード変更
+                                    </a>
+                                                                    <a href="../../../manage/code/display/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        表示設定
+                                    </a>
+                                                                    <a href="../../../manage/code/searchRegist/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        検索条件登録
+                                    </a>
+                                                                    <a href="../../../manage/code/searches/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        検索条件一覧
+                                    </a>
+                                                                    <a href="../../../manage/code/helpMessageRegist/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        注釈登録
+                                    </a>
+                                                                    <a href="../../../manage/code/helpMessages/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        注釈一覧
+                                    </a>
+                                                                                                                <a href="../../../manage/log/index.html"
+                                class="list-group-item
+                                                                ">
+                                ログ管理
+                            </a>
+                                                                                <a href="../../../manage/holiday/index.html"
+                                class="list-group-item
+                                                                ">
+                                祝日管理
+                            </a>
+                                                                                <a href="../../../manage/migration/index.html"
+                                class="list-group-item
+                                                                ">
+                                他システム移行
+                            </a>
+                                                                        </div>
+                </nav>
+            </aside>
+
+            <main class="col-lg-10 order-2" role="main">
+                    <div class="card">
+        <div class="card-header text-white bg-primary">コード管理 - コード一覧</div>
+        <div class="card-body">
+            <p>プラグインで使うコードを一覧表示できます。</p>
+            <p></p>
+        </div>
+    </div>
+
+        <div class="card mt-3">
+        <div class="card-header text-white bg-primary">画面</div>
+        <div class="card-body">
+                            <p>
+                                            【コード一覧】<br />
+                    
+                    
+                    <img src="../../../manage/code/index/images/index.png" class="img-fluid img-manual" style="max-width:980px;"
+                                            >
+
+                                            <div class="card bg-light">
+                            <div class="card-body">
+                                <ul class="mb-0"><li>コード一覧に表示する項目は、「表示設定」から設定できます。</li><li>「ｘ」ボタンを押下すると、検索条件をクリアして再検索します。</li><li>「？」ボタンを押下すると、このオンラインマニュアルで下記の[ 検索条件の詳細 ]が確認できます。</li><li>「虫眼鏡 学校」ボタンは「検索条件登録」から登録した検索条件です。ボタンを押すと、指定した検索条件でコード一覧を表示します。</li></ul>
+                            </div>
+                        </div>
+                                    </p>
+                        <p html_only>【検索条件の詳細】</p html_only>
+<div class="card" html_only>
+<div class="card-body" html_only>
+<p>通常の検索</p>
+<p html_only>単語を入力すると、全項目に部分一致検索になります。<br>半角空白( )かカンマ(,)の区切って検索すると、and検索になります。<br /></p html_only>
+<div class="alert alert-secondary" role="alert" html_only>例) apple word bear<br>例) 場所 担当</div>
+<span style="font-weight: bolder;">項目を指定して検索</span>
+<p><code class="highlighter-rouge" style="font-size: 14px;">&lt;カラム名&gt;=&lt;検索値&gt;</code>形式にすると、指定した項目で完全一致検索ができます。<br>指定できる項目は下記表の通りです。</p>
+<div class="alert alert-secondary" role="alert">例) type_code1=topic code=1<br>例) type_name=場所</div>
+<table class="table table-sm table-striped table_css">
+<thead>
+    <tr>
+        <th scope="col" class="doc_th">カラム名</th>
+        <th scope="col" class="doc_th">表示名</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>plugin_name</td>
+        <td>プラグイン（英語）</td>
+    </tr>
+    <tr>
+        <td>plugin_name_full</td>
+        <td>プラグイン（日本語）</td>
+    </tr>
+    <tr>
+        <td>bucket_name</td>
+        <td>bucket_name</td>
+    </tr>
+    <tr>
+        <td>buckets_id</td>
+        <td>buckets_id</td>
+    </tr>
+    <tr>
+        <td>prefix</td>
+        <td>prefix</td>
+    </tr>
+    <tr>
+        <td>type_name</td>
+        <td>type_name</td>
+    </tr>
+    <tr>
+        <td>type_code1</td>
+        <td>type_code1</td>
+    </tr>
+    <tr>
+        <td>type_code2</td>
+        <td>type_code2</td>
+    </tr>
+    <tr>
+        <td>type_code3</td>
+        <td>type_code3</td>
+    </tr>
+    <tr>
+        <td>type_code4</td>
+        <td>type_code4</td>
+    </tr>
+    <tr>
+        <td>type_code5</td>
+        <td>type_code5</td>
+    </tr>
+    <tr>
+        <td>code</td>
+        <td>コード</td>
+    </tr>
+    <tr>
+        <td>value</td>
+        <td>値</td>
+    </tr>
+    <tr>
+        <td>additional1</td>
+        <td>additional1</td>
+    </tr>
+    <tr>
+        <td>additional2</td>
+        <td>additional2</td>
+    </tr>
+    <tr>
+        <td>additional3</td>
+        <td>additional3</td>
+    </tr>
+    <tr>
+        <td>additional4</td>
+        <td>additional4</td>
+    </tr>
+    <tr>
+        <td>additional5</td>
+        <td>additional5</td>
+    </tr>
+    <tr>
+        <td>additional6</td>
+        <td>additional6</td>
+    </tr>
+    <tr>
+        <td>additional7</td>
+        <td>additional7</td>
+    </tr>
+    <tr>
+        <td>additional8</td>
+        <td>additional8</td>
+    </tr>
+    <tr>
+        <td>additional9</td>
+        <td>additional9</td>
+    </tr>
+    <tr>
+        <td>additional10</td>
+        <td>additional10</td>
+    </tr>
+    <tr>
+        <td>display_sequence</td>
+        <td>表示順</td>
+    </tr>
+</tbody>
+</table>
+<span style="font-weight: bolder;">空白を含む単語の検索</span>
+<p>""か''で囲む事で空白を含む検索ができます。</p>
+<div class="alert alert-secondary" role="alert">例) "apple word"<br>例) "type_code1=topic code"<br>例) "value=コネクト 太郎"</div>
+</div html_only>
+</div html_only>
+
+        </div>
+    </div>
+                </main>
+        </div>
+    </div>
+
+    <footer class="container">
+        <div class="card border-0 mt-2">
+            <div class="card-body">
+                <div class="text-center">
+                    <a href="https://connect-cms.jp" target="_blank">Powered by Connect-CMS</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../../../css/manual.css" type="text/css">
+    <link rel="stylesheet" href="../../../font/css/all.min.css" type="text/css">
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script src="../../../js/popper.min.js"></script>
+    <script src="../../../js/bootstrap.min.js"></script>
+    <title>Connect-CMSマニュアル</title>
+</head>
+<body class=" ">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark  " aria-label="ヘッダー">
+
+        <!-- Branding Image -->
+        <a class="navbar-brand" href="../../../index.html">
+            Connect-CMSマニュアル
+        </a>
+
+        
+        <div class="d-none d-md-block">
+            <span class="badge badge-pill badge-secondary mr-2">設計</span>
+<span class="badge badge-pill badge-info mr-2"><a href="../../../common/index.html" class="text-white">共通機能</a></span>
+<span class="badge badge-pill badge-danger mr-2"><a href="../../../manage/index.html" class="text-white">管理者メニュー</a></span>
+<span class="badge badge-pill badge-primary mr-2"><a href="../../../user/index.html" class="text-white">一般ユーザ機能</a></span>
+<span class="badge badge-pill badge-success mr-2">マイページ</span>
+<span class="badge badge-pill badge-warning mr-2">エラー説明</span>
+<span class="badge badge-pill badge-light mr-2">逆引き</span>
+        </div>
+
+        <!-- SmartPhone Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="メニュー">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav d-md-none">
+                <li class="nav-item">
+                    <a href="https://connect-cms.jp/" class="nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://connect-cms.jp/forum" class="nav-link">
+                        フォーラム<i class="fas fa-plus"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://connect-cms.jp/about" class="nav-link">
+                        Connect-CMSとは<i class="fas fa-plus"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+        <div class="container-fluid">
+        <div class="row mt-3">
+
+            <aside class="col-lg-2 order-1">
+                <nav class="list-group d-none d-lg-block">
+                    <div class="list-group">
+                                                    <a href="../../../user/contents/index.html"
+                                class="list-group-item
+                                                                ">
+                                固定記事
+                            </a>
+                                                                                <a href="../../../user/menus/index.html"
+                                class="list-group-item
+                                                                ">
+                                メニュー
+                            </a>
+                                                                                <a href="../../../user/blogs/index.html"
+                                class="list-group-item
+                                                                ">
+                                ブログ
+                            </a>
+                                                                                <a href="../../../user/calendars/index.html"
+                                class="list-group-item
+                                                                ">
+                                カレンダー
+                            </a>
+                                                                                <a href="../../../user/slideshows/index.html"
+                                class="list-group-item
+                                                                ">
+                                スライドショー
+                            </a>
+                                                                                <a href="../../../user/openingcalendars/index.html"
+                                class="list-group-item
+                                                                ">
+                                開館カレンダー
+                            </a>
+                                                                                <a href="../../../user/whatsnews/index.html"
+                                class="list-group-item
+                                                                ">
+                                新着情報
+                            </a>
+                                                                                <a href="../../../user/faqs/index.html"
+                                class="list-group-item
+                                                                ">
+                                FAQ
+                            </a>
+                                                                                <a href="../../../user/linklists/index.html"
+                                class="list-group-item
+                                                                ">
+                                リンクリスト
+                            </a>
+                                                                                <a href="../../../user/cabinets/index.html"
+                                class="list-group-item
+                                                                ">
+                                キャビネット
+                            </a>
+                                                                                <a href="../../../user/databases/index.html"
+                                class="list-group-item
+                                                                ">
+                                データベース
+                            </a>
+                                                            
+                                <a href="../../../user/databases/index/index.html"
+                                    class="list-group-item
+                                                                        ">
+                                    <i class="fas fa-chevron-right"></i>
+                                    コンテンツ一覧
+                                </a>
+
+                                
+                                                                    <a href="../../../user/databases/input/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        コンテンツ登録
+                                    </a>
+                                                                    <a href="../../../user/databases/detail/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        コンテンツ詳細
+                                    </a>
+                                                                    <a href="../../../user/databases/editColumn/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        カラム編集
+                                    </a>
+                                                                    <a href="../../../user/databases/editColumnDetail/index.html"
+                                        class="list-group-item
+                                                                                            active
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        カラム詳細編集
+                                    </a>
+                                                                    <a href="../../../user/databases/editView/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        表示設定
+                                    </a>
+                                                                    <a href="../../../user/databases/createBuckets/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        作成
+                                    </a>
+                                                                    <a href="../../../user/databases/listBuckets/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        選択
+                                    </a>
+                                                                    <a href="../../../user/databases/import/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        インポート
+                                    </a>
+                                                                    <a href="../../../user/databases/editBucketsMails/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        メール送信設定
+                                    </a>
+                                                                                                                <a href="../../../user/photoalbums/index.html"
+                                class="list-group-item
+                                                                ">
+                                フォトアルバム
+                            </a>
+                                                                                <a href="../../../user/opacs/index.html"
+                                class="list-group-item
+                                                                ">
+                                Opac
+                            </a>
+                                                                        </div>
+                </nav>
+            </aside>
+
+            <main class="col-lg-10 order-2" role="main">
+                    <div class="card">
+        <div class="card-header text-white bg-primary">データベース - カラム詳細編集</div>
+        <div class="card-body">
+            <p>カラムの詳細設定を行います。</p>
+            <p>表示の条件や入力チェック、キャプションやデザイン用クラス名などを設定できます。</p>
+        </div>
+    </div>
+
+        <div class="card mt-3">
+        <div class="card-header text-white bg-primary">画面</div>
+        <div class="card-body">
+                            <p>
+                                            【項目詳細設定（新着情報等の設定）】<br />
+                    
+                    
+                    <img src="../../../user/databases/editColumnDetail/images/editColumnDetail1.png" class="img-fluid img-manual" style="max-width:980px;"
+                                            >
+
+                                            <div class="card bg-light">
+                            <div class="card-body">
+                                <ul class="mb-0"><li>項目の詳細内容（新着情報等の設定）を設定します。項目詳細設定は型によって、設定できる項目が異なります。ここでは、1行文字列型を例にします。</li></ul>
+                            </div>
+                        </div>
+                                    </p>
+                            <p>
+                                            【項目詳細設定（チェック処理の設定）】<br />
+                    
+                    
+                    <img src="../../../user/databases/editColumnDetail/images/editColumnDetail2.png" class="img-fluid img-manual" style="max-width:980px;"
+                                            >
+
+                                            <div class="card bg-light">
+                            <div class="card-body">
+                                <ul class="mb-0"><li>項目の詳細内容（チェック処理の設定）を設定します。</li></ul>
+                            </div>
+                        </div>
+                                    </p>
+                            <p>
+                                            【項目詳細設定（キャプションの設定）】<br />
+                    
+                    
+                    <img src="../../../user/databases/editColumnDetail/images/editColumnDetail3.png" class="img-fluid img-manual" style="max-width:980px;"
+                                            >
+
+                                            <div class="card bg-light">
+                            <div class="card-body">
+                                <ul class="mb-0"><li>項目の詳細内容（キャプションの設定）を設定します。</li></ul>
+                            </div>
+                        </div>
+                                    </p>
+                            <p>
+                                            【項目詳細設定（DBカラム設定）】<br />
+                    
+                    
+                    <img src="../../../user/databases/editColumnDetail/images/editColumnDetail4.png" class="img-fluid img-manual" style="max-width:980px;"
+                                            >
+
+                                            <div class="card bg-light">
+                            <div class="card-body">
+                                <ul class="mb-0"><li>項目の詳細内容（DBカラム設定）を設定します。</li></ul>
+                            </div>
+                        </div>
+                                    </p>
+                            <p>
+                                            【DBカラム設定の後半、デザインの設定】<br />
+                    
+                    
+                    <img src="../../../user/databases/editColumnDetail/images/editColumnDetail5.png" class="img-fluid img-manual" style="max-width:980px;"
+                                            >
+
+                                            <div class="card bg-light">
+                            <div class="card-body">
+                                <ul class="mb-0"><li>項目の詳細内容（DBカラム設定の後半、及びデザインの設定）を設定します。</li></ul>
+                            </div>
+                        </div>
+                                    </p>
+                        <div class="card" html_only>
+<div class="card-body" html_only>
+
+<style>
+.font_small {
+    font-size: 90%;
+}
+.pdf_table th {
+    background-color: #f2f2f2; 
+}
+</style>
+
+<p>【詳細画面で設定できる内容】※ 設定項目の詳細は表の下で説明します。</p>
+<div class="table-responsive" html_only>
+<table class="table table-sm table-bordered table-striped table_css font_small pdf_table">
+<tbody>
+    <tr>
+    <th style="width: 15%;">設定項目</th>
+    <th style="width: 5%;">１行文字</th>
+    <th style="width: 5%;">複数文字</th>
+    <th style="width: 5%;">単一 選択</th>
+    <th style="width: 5%;">複数 選択</th>
+    <th style="width: 5%;">リスト</th>
+    <th style="width: 5%;">メール</th>
+    <th style="width: 5%;">日付</th>
+    <th style="width: 5%;">時間</th>
+    <th style="width: 5%;">複数年限</th>
+    <th style="width: 5%;">リンク</th>
+    <th style="width: 5%;">ファイル</th>
+    <th style="width: 5%;">画像</th>
+    <th style="width: 5%;">動画</th>
+    <th style="width: 5%;">ウィジウィグ</th>
+    <th style="width: 5%;">登録日</th>
+    <th style="width: 5%;">更新日</th>
+    <th style="width: 5%;">公開日</th>
+    </tr>
+    <tr>
+    <th style="min-width: 5em;">タイトルの設定</th>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    </tr>
+    <tr>
+    <th style="min-width: 5em;">本文の設定</th>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    </tr>
+    <tr>
+    <th style="min-width: 5em;">イメージの設定</th>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    </tr>
+    <tr>
+    <th>選択肢の設定</th>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    </tr>
+    <tr>
+    <th>チェック処理の設定</th>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    </tr>
+    <tr>
+    <th>項目毎の固有設定</th>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"></td>
+    </tr>
+    <tr>
+    <th>キャプションの設定</th>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    </tr>
+    <tr>
+    <th>DBカラム設定</th>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    </tr>
+    <tr>
+    <th>デザインの設定</th>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    <td style="text-align: center;">〇</td>
+    </tr>
+</tbody>
+</table>
+
+</div html_only><!-- table-responsive -->
+
+    <p><b>タイトルの設定</b></p>
+    <ul>
+        <li class="card-text">新着情報等のタイトル表示に使う項目を、データベース毎に１つ指定できます。</li>
+    </ul>
+    <p><b>本文の設定</b></p>
+    <ul>
+        <li class="card-text">新着情報等の本文表示に使う項目を、データベース毎に１つ指定できます</li>
+    </ul>
+    <p><b>イメージの設定</b></p>
+    <ul>
+        <li class="card-text">新着情報等のイメージ表示に使う項目を、データベース毎に１つ指定できます</li>
+    </ul>
+    <p><b>選択肢の設定</b></p>
+    <ul>
+        <li class="card-text">選択肢の追加、削除、表示順の変更ができます。</li>
+    </ul>
+    <p><b>チェック処理の設定</b></p>
+    <p>「１行文字列型」、「複数行文字列型」について、下記の設定ができます。</p>
+    <ul>
+        <li class="card-text">数値のみ許容</li>
+        <li class="card-text">英数値のみ許容</li>
+        <li class="card-text">入力最大桁数 ※数値用</li>
+        <li class="card-text">入力最大文字数</li>
+        <li class="card-text">最大値</li>
+        <li class="card-text">最小値</li>
+    </ul>
+    <p>「日付型」について、下記の設定ができます。</p>
+    <ul>
+        <li class="card-text">指定日数以降の日付のみ許容</li>
+    </ul>
+    <p><b>項目毎の固有設定</b></p>
+    <ul>
+        <li class="card-text">「時間型」で、分刻みの設定ができます。</li>
+    </ul>
+    <p><b>キャプションの設定</b></p>
+    <ul>
+        <li class="card-text">キャプション内容の追加、キャプション文字色の変更ができます。</li>
+    </ul>
+    <p><b>DBカラム設定</b></p>
+    <ul>
+        <li class="card-text">一覧・詳細画面への表示・非表示を設定できます。</li>
+        <li class="card-text">権限毎に一覧・詳細画面または、登録・編集画面で表示カラムの表示・非表示を設定できます。</li>
+        <li class="card-text">並べ替え項目・検索対象項目として指定できます。</li>
+        <li class="card-text">行グループ・列グループを設定して、表示カラムを横並びに表示する事ができます。</li>
+        <li class="card-text">【行グループ・列グループ設定例】<br>
+        <div class="table-responsive" html_only>
+            <table class="table table-sm table-bordered table-striped table_css font_small pdf_table">
+                <colgroup>
+                    <col width="73" style="width: 55pt;">
+                    <col width="84" span="2" style="mso-width-source: userset; mso-width-alt: 2688; width: 63pt;">
+                </colgroup>
+                <tbody>
+                    <tr>
+                    <th width="73">項目名</th>
+                    <th width="84" align="center" style="text-align: center;">行グループ</th>
+                    <th width="84" align="center" style="text-align: center;">列グループ</th>
+                    </tr>
+                    <tr>
+                    <td>画像</td>
+                    <td align="center">1</td>
+                    <td align="center">1</td>
+                    </tr>
+                    <tr>
+                    <td>カラム1</td>
+                    <td align="center">1</td>
+                    <td align="center">2</td>
+                    </tr>
+                    <tr>
+                    <td>カラム2</td>
+                    <td align="center">1</td>
+                    <td align="center">2</td>
+                    </tr>
+                    <tr>
+                    <td>メール3</td>
+                    <td align="center">1</td>
+                    <td align="center">2</td>
+                    </tr>
+                    <tr>
+                    <td>カラム4</td>
+                    <td align="center">2</td>
+                    <td align="center">1</td>
+                    </tr>
+                    <tr>
+                    <td>カラム5</td>
+                    <td align="center">3</td>
+                    <td align="center">1</td>
+                    </tr>
+                    <tr>
+                    <td>カラム6</td>
+                    <td align="center">3</td>
+                    <td align="center">2</td>
+                    </tr>
+                    <tr>
+                    <td>カラム7</td>
+                    <td align="center">4</td>
+                    <td align="center">1</td>
+                    </tr>
+                    <tr>
+                    <td>カラム8</td>
+                    <td align="center">4</td>
+                    <td align="center">2</td>
+                    </tr>
+                    <tr>
+                    <td>カラム9</td>
+                    <td align="center">4</td>
+                    <td align="center">3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div html_only>
+        <li class="card-text">【表示例】<br>
+        <div class="table-responsive" html_only>
+            <table class="table table-sm table-bordered table-striped table_css font_small pdf_table">
+                <colgroup>
+                    <col width="73" span="2" style="width: 55pt;">
+                    <col width="84" span="2" style="mso-width-source: userset; mso-width-alt: 2688; width: 63pt;">
+                </colgroup>
+                <tbody>
+                    <tr>
+                    <th></th>
+                    <th>1列</th>
+                    <th>2列</th>
+                    <th>3列</th>
+                    </tr>
+                    <tr>
+                    <td>1行</td>
+                    <td class="xl66">画像</td>
+                    <td colspan="2" class="xl69" style="border-right: 0.5pt solid black; border-left: none;">カラム1</td>
+                    </tr>
+                    <tr>
+                    <td></td>
+                    <td class="xl67">　</td>
+                    <td colspan="2" class="xl69" style="border-right: 0.5pt solid black; border-left: none;">カラム2</td>
+                    </tr>
+                    <tr>
+                    <td></td>
+                    <td class="xl68">　</td>
+                    <td colspan="2" class="xl69" style="border-right: 0.5pt solid black; border-left: none;">メール3</td>
+                    </tr>
+                    <tr>
+                    <td>2行</td>
+                    <td colspan="3" class="xl69" style="border-right: 0.5pt solid black;">カラム4</td>
+                    </tr>
+                    <tr>
+                    <td>3行</td>
+                    <td>カラム5</td>
+                    <td colspan="2" class="xl69" style="border-right: 0.5pt solid black; border-left: none;">カラム6</td>
+                    </tr>
+                    <tr>
+                    <td>4行</td>
+                    <td>カラム7</td>
+                    <td style="border-top: none; border-left: none;">カラム8</td>
+                    <td style="border-top: none; border-left: none;">カラム9</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div html_only>
+    </ul>
+    <p><b>デザインの設定</b></p>
+    <ul>
+        <li class="card-text">CSSのクラス名を設定できます。</li>
+    </ul>
+</div html_only><!-- card-body -->
+
+        </div>
+    </div>
+                </main>
+        </div>
+    </div>
+
+    <footer class="container">
+        <div class="card border-0 mt-2">
+            <div class="card-body">
+                <div class="text-center">
+                    <a href="https://connect-cms.jp" target="_blank">Powered by Connect-CMS</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
