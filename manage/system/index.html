@@ -9,15 +9,18 @@
     <script src="../../js/jquery-3.6.0.min.js"></script>
     <script src="../../js/popper.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
-    <title>Connect-CMSマニュアル</title>
+    <title>Connect-CMSマニュアル (v1.1.3)</title>
 </head>
 <body class=" ">
     <nav class="navbar navbar-expand-md bg-dark navbar-dark  " aria-label="ヘッダー">
 
         <!-- Branding Image -->
-        <a class="navbar-brand" href="../../index.html">
-            Connect-CMSマニュアル
-        </a>
+        <div>
+            <a class="navbar-brand mr-2" href="../../index.html">
+                Connect-CMSマニュアル
+            </a>
+            <small class="mr-2" style="color: #ffffff;">v1.1.3</small>
+        </div>
 
         
         <div class="d-none d-md-block">
@@ -60,6 +63,16 @@
                                                                         <li class="smp-nav-link">
                                 <a href="../../manage/system/index/index.html" class="smp-nav-link">
                                     デバックモード
+                                </a>
+                            </li>
+                                                                                                <li class="smp-nav-link">
+                                <a href="../../manage/system/mail/index.html" class="smp-nav-link">
+                                    メール設定
+                                </a>
+                            </li>
+                                                                                                <li class="smp-nav-link">
+                                <a href="../../manage/system/mailTest/index.html" class="smp-nav-link">
+                                    メール送信テスト
                                 </a>
                             </li>
                                                                                                 <li class="smp-nav-link">
@@ -109,15 +122,15 @@
                                                                 ">
                                 サイト管理
                             </a>
-                                                                                <a href="../../manage/user/index.html"
-                                class="list-group-item
-                                                                ">
-                                ユーザ管理
-                            </a>
                                                                                 <a href="../../manage/group/index.html"
                                 class="list-group-item
                                                                 ">
                                 グループ管理
+                            </a>
+                                                                                <a href="../../manage/user/index.html"
+                                class="list-group-item
+                                                                ">
+                                ユーザ管理
                             </a>
                                                                                 <a href="../../manage/security/index.html"
                                 class="list-group-item
@@ -144,6 +157,18 @@
                                 </a>
 
                                 
+                                                                    <a href="../../manage/system/mail/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        メール設定
+                                    </a>
+                                                                    <a href="../../manage/system/mailTest/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        メール送信テスト
+                                    </a>
                                                                     <a href="../../manage/system/log/index.html"
                                         class="list-group-item
                                                                                 ">
@@ -256,6 +281,10 @@
             <dl class="row mb-0">
                                     <dt class="col-md-2"><a href="../../manage/system/index/index.html">デバックモード</a></dt>
                     <dd class="col-md-10">デバックモードが表示されます。</dd>
+                                    <dt class="col-md-2"><a href="../../manage/system/mail/index.html">メール設定</a></dt>
+                    <dd class="col-md-10">SMTPサーバ等のメール送信設定ができます。</dd>
+                                    <dt class="col-md-2"><a href="../../manage/system/mailTest/index.html">メール送信テスト</a></dt>
+                    <dd class="col-md-10">メールの動作確認ができます。</dd>
                                     <dt class="col-md-2"><a href="../../manage/system/log/index.html">エラーログ設定</a></dt>
                     <dd class="col-md-10">エラーログファイルの出力方法を変更できます。</dd>
                                     <dt class="col-md-2"><a href="../../manage/system/server/index.html">サーバ設定</a></dt>

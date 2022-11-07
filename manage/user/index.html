@@ -9,15 +9,18 @@
     <script src="../../js/jquery-3.6.0.min.js"></script>
     <script src="../../js/popper.min.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
-    <title>Connect-CMSマニュアル</title>
+    <title>Connect-CMSマニュアル (v1.1.3)</title>
 </head>
 <body class=" ">
     <nav class="navbar navbar-expand-md bg-dark navbar-dark  " aria-label="ヘッダー">
 
         <!-- Branding Image -->
-        <a class="navbar-brand" href="../../index.html">
-            Connect-CMSマニュアル
-        </a>
+        <div>
+            <a class="navbar-brand mr-2" href="../../index.html">
+                Connect-CMSマニュアル
+            </a>
+            <small class="mr-2" style="color: #ffffff;">v1.1.3</small>
+        </div>
 
         
         <div class="d-none d-md-block">
@@ -65,6 +68,11 @@
                                                                                                 <li class="smp-nav-link">
                                 <a href="../../manage/user/originalRole/index.html" class="smp-nav-link">
                                     役割設定
+                                </a>
+                            </li>
+                                                                                                <li class="smp-nav-link">
+                                <a href="../../manage/user/editColumns/index.html" class="smp-nav-link">
+                                    項目編集
                                 </a>
                             </li>
                                                                                                 <li class="smp-nav-link">
@@ -124,6 +132,11 @@
                                                                 ">
                                 サイト管理
                             </a>
+                                                                                <a href="../../manage/group/index.html"
+                                class="list-group-item
+                                                                ">
+                                グループ管理
+                            </a>
                                                                                 <a href="../../manage/user/index.html"
                                 class="list-group-item
                                                                             active
@@ -144,6 +157,12 @@
                                                                                 ">
                                         <i class="fas fa-chevron-right"></i>
                                         役割設定
+                                    </a>
+                                                                    <a href="../../manage/user/editColumns/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        項目編集
                                     </a>
                                                                     <a href="../../manage/user/regist/index.html"
                                         class="list-group-item
@@ -169,12 +188,7 @@
                                         <i class="fas fa-chevron-right"></i>
                                         一括削除
                                     </a>
-                                                                                                                <a href="../../manage/group/index.html"
-                                class="list-group-item
-                                                                ">
-                                グループ管理
-                            </a>
-                                                                                <a href="../../manage/security/index.html"
+                                                                                                                <a href="../../manage/security/index.html"
                                 class="list-group-item
                                                                 ">
                                 セキュリティ管理
@@ -291,6 +305,8 @@
                     <dd class="col-md-10">サイトに登録されているユーザを一覧で確認できます。</dd>
                                     <dt class="col-md-2"><a href="../../manage/user/originalRole/index.html">役割設定</a></dt>
                     <dd class="col-md-10">ユーザの属性として役割を設定することができます。</dd>
+                                    <dt class="col-md-2"><a href="../../manage/user/editColumns/index.html">項目編集</a></dt>
+                    <dd class="col-md-10">ユーザ項目の設定を行います。</dd>
                                     <dt class="col-md-2"><a href="../../manage/user/regist/index.html">ユーザ登録画面</a></dt>
                     <dd class="col-md-10">ユーザの登録や編集を行えます。</dd>
                                     <dt class="col-md-2"><a href="../../manage/user/import/index.html">CSVインポート</a></dt>
@@ -372,6 +388,11 @@
         <td style="width: 20%;"></td>
         <td style="width: 40%;">2</td>
         <td style="width: 40%;">仮登録</td>
+    </tr>
+    <tr>
+        <td style="width: 20%;"></td>
+        <td style="width: 40%;">3</td>
+        <td style="width: 40%;">仮削除</td>
     </tr>
 </tbody>
 </table>
