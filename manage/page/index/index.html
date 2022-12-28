@@ -9,7 +9,7 @@
     <script src="../../../js/jquery-3.6.0.min.js"></script>
     <script src="../../../js/popper.min.js"></script>
     <script src="../../../js/bootstrap.min.js"></script>
-    <title>Connect-CMSマニュアル (v1.2.0)</title>
+    <title>Connect-CMSマニュアル (v1.3.0)</title>
 </head>
 <body class=" ">
     <nav class="navbar navbar-expand-md bg-dark navbar-dark  " aria-label="ヘッダー">
@@ -19,7 +19,7 @@
             <a class="navbar-brand mr-2" href="../../../index.html">
                 Connect-CMSマニュアル
             </a>
-            <small class="mr-2" style="color: #ffffff;">v1.2.0</small>
+            <small class="mr-2" style="color: #ffffff;">v1.3.0</small>
         </div>
 
         
@@ -88,18 +88,18 @@
                                 </a>
                             </li>
                                                                                                 <li class="smp-nav-link">
-                                <a href="../../../manage/page/upload/index.html" class="smp-nav-link">
-                                    CSVインポート
-                                </a>
-                            </li>
-                                                                                                <li class="smp-nav-link">
                                 <a href="../../../manage/page/movePage/index.html" class="smp-nav-link">
-                                    ページ移動
+                                    ページ階層移動
                                 </a>
                             </li>
                                                                                                 <li class="smp-nav-link">
                                 <a href="../../../manage/page/roleList/index.html" class="smp-nav-link">
                                     ページ権限一覧
+                                </a>
+                            </li>
+                                                                                                <li class="smp-nav-link">
+                                <a href="../../../manage/page/upload/index.html" class="smp-nav-link">
+                                    CSVインポート
                                 </a>
                             </li>
                                                             </ul>
@@ -150,23 +150,23 @@
                                         <i class="fas fa-chevron-right"></i>
                                         ページ編集
                                     </a>
-                                                                    <a href="../../../manage/page/upload/index.html"
-                                        class="list-group-item
-                                                                                ">
-                                        <i class="fas fa-chevron-right"></i>
-                                        CSVインポート
-                                    </a>
                                                                     <a href="../../../manage/page/movePage/index.html"
                                         class="list-group-item
                                                                                 ">
                                         <i class="fas fa-chevron-right"></i>
-                                        ページ移動
+                                        ページ階層移動
                                     </a>
                                                                     <a href="../../../manage/page/roleList/index.html"
                                         class="list-group-item
                                                                                 ">
                                         <i class="fas fa-chevron-right"></i>
                                         ページ権限一覧
+                                    </a>
+                                                                    <a href="../../../manage/page/upload/index.html"
+                                        class="list-group-item
+                                                                                ">
+                                        <i class="fas fa-chevron-right"></i>
+                                        CSVインポート
                                     </a>
                                                                                                                 <a href="../../../manage/site/index.html"
                                 class="list-group-item
@@ -266,9 +266,23 @@
                     <div class="card">
         <div class="card-header text-white bg-primary">ページ管理 - ページ一覧</div>
         <div class="card-body">
-                            <p>ページの一覧が表示されます。<br />ページに関する設定などが俯瞰できる画面です。</p>
-                <p>ページの内容を編集するときは、ページ名の左にある編集ボタンをクリックしてください。</p>
-                
+                            <div class="row">
+                    <div class="col-lg-4 p-0">
+                        <div class="embed-responsive embed-responsive-16by9">
+                                                        <video src="../../../manage/page/index/mp4/mizuki/_video.mp4"
+                                   class="embed-responsive-item"
+                                   poster="../../../manage/page/index/mp4/mizuki/_poster.png"
+                                   controls>
+                            </video>
+                                                    </div>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <p>ページの一覧が表示されます。<br />ページに関する設定などが俯瞰できる画面です。</p>
+                        <p>ページの内容を編集するときは、ページ名の左にある編集ボタンをクリックしてください。</p>
+                        
+                    </div>
+                </div>
                     </div>
     </div>
 
@@ -276,11 +290,17 @@
         <div class="card-header text-white bg-primary">画面</div>
         <div class="card-body">
                             <p>
+                                            【ページ一覧】<br />
                     
                     
-                    <img src="../../../manage/page/index/images/index.png" class="img-fluid img-manual" style="max-width:980px;"
+                    <img src="../../../manage/page/index/images/index1.png" class="img-fluid img-manual" style="max-width:980px;"
                                             >
 
+                                            <div class="card bg-light">
+                            <div class="card-body">
+                                <ul class="mb-0"><li>現在のページの一覧を確認できます。</li><li>ページ内容の編集は<a href="../edit/index.html">「ページ編集」</a>を参照してください。</li><li>上矢印と下矢印で同じ階層内のページ移動ができます。</li><li>階層の移動は<a href="../movePage/index.html">「ページ階層移動」</a>を参照してください。</li><li>ページ名が表示されます。大なり記号は階層を表しています。</li><li>目のアイコンはメニューの初期設定で表示するかどうかを表します。<br />クリックすることで、状態を変更できます。</li><li>固定リンクは設定した内容が表示されます。ページにリンクされています。</li><li>シリンダー鍵マークはパスワード付きページを表します。</li><li>南京錠マークはメンバーシップページとログインユーザ全員参加ページを表します。</li><li>ページ権限設定はメンバーシップページにたいする権限が設定さえているかどうかを表します。</li><li>その他、ページ編集で設定したいくつかの内容の状態がアイコンで表示されます。</li></ul>
+                            </div>
+                        </div>
                                     </p>
                     </div>
     </div>
