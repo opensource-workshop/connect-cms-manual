@@ -251,9 +251,23 @@
                     <div class="card">
         <div class="card-header text-white bg-primary">システム管理 - サーバ設定</div>
         <div class="card-body">
-                            <p>画像リサイズ時のPHPメモリ数を設定できます。</p>
-                <p>画像リサイズでエラーになるような場合は増やしてください。</p>
-                
+                            <div class="row">
+                    <div class="col-lg-4 p-0">
+                        <div class="embed-responsive embed-responsive-16by9">
+                                                        <video src="../../../manage/system/server/mp4/mizuki/_video.mp4"
+                                   class="embed-responsive-item"
+                                   poster="../../../manage/system/server/mp4/mizuki/_poster.png"
+                                   controls>
+                            </video>
+                                                    </div>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <p>画像リサイズ時のPHPメモリ数を設定できます。</p>
+                        <p>画像リサイズでエラーになるような場合は増やしてください。</p>
+                        
+                    </div>
+                </div>
                     </div>
     </div>
 
@@ -261,11 +275,17 @@
         <div class="card-header text-white bg-primary">画面</div>
         <div class="card-body">
                             <p>
+                                            【サーバ設定】<br />
                     
                     
                     <img src="../../../manage/system/server/images/server.png" class="img-fluid img-manual" style="max-width:980px;"
                                             >
 
+                                            <div class="card bg-light">
+                            <div class="card-body">
+                                <ul class="mb-0"><li>画像アップロード時にシステムエラーになる場合は、画像の変換処理でメモリが不足している可能性があります。<br />そのような場合は、ここで画像変換時に使用するメモリ上限を設定することで、エラーを回避できる可能性があります。</li></ul>
+                            </div>
+                        </div>
                                     </p>
                     </div>
     </div>
