@@ -9,23 +9,28 @@
     <script src="../../../js/jquery-3.6.0.min.js"></script>
     <script src="../../../js/popper.min.js"></script>
     <script src="../../../js/bootstrap.min.js"></script>
-    <title>Connect-CMSマニュアル</title>
+    <title>Connect-CMSマニュアル (v1.6.0)</title>
 </head>
 <body class=" ">
     <nav class="navbar navbar-expand-md bg-dark navbar-dark  " aria-label="ヘッダー">
 
         <!-- Branding Image -->
-        <a class="navbar-brand" href="../../../index.html">
-            Connect-CMSマニュアル
-        </a>
+        <div>
+            <a class="navbar-brand mr-2" href="../../../index.html">
+                Connect-CMSマニュアル
+            </a>
+            <small class="mr-2" style="color: #ffffff;">v1.6.0</small>
+        </div>
 
         
         <div class="d-none d-md-block">
-            <span class="badge badge-pill badge-secondary mr-2"><a href="../../../blueprint/index.html" class="text-white">設計</a></span>
+            <span class="badge badge-pill badge-secondary mr-2"><a href="../../../function/index.html" class="text-white">機能一覧</a></span>
+<span class="badge badge-pill badge-secondary mr-2"><a href="../../../blueprint/index.html" class="text-white">設計</a></span>
 <span class="badge badge-pill badge-info mr-2"><a href="../../../common/index.html" class="text-white">共通機能</a></span>
 <span class="badge badge-pill badge-danger mr-2"><a href="../../../manage/index.html" class="text-white">管理者</a></span>
 <span class="badge badge-pill badge-primary mr-2"><a href="../../../user/index.html" class="text-white">一般ユーザ</a></span>
 <span class="badge badge-pill badge-success mr-2"><a href="../../../mypage/index.html" class="text-white">マイページ</a></span>
+<span class="badge badge-pill badge-secondary mr-2"><a href="../../../study/index.html" class="text-white">Connect-Study</a></span>
 <!--
 <span class="badge badge-pill badge-warning mr-2">エラー説明</span>
 <span class="badge badge-pill badge-light mr-2">逆引き</span>
@@ -66,11 +71,6 @@
                                 </a>
                             </li>
                                                                                                 <li class="smp-nav-link">
-                                <a href="../../../manage/index/index/index.html" class="smp-nav-link">
-                                    お知らせ
-                                </a>
-                            </li>
-                                                                                                <li class="smp-nav-link">
                                 <a href="../../../common/index/index/index.html" class="smp-nav-link">
                                     ログイン
                                 </a>
@@ -86,20 +86,32 @@
                                 </a>
                             </li>
                                                                                                 <li class="smp-nav-link">
-                                <a href="../../../mypage/index/index/index.html" class="smp-nav-link">
-                                    マイページ
+                                <a href="../../../common/index/lock/index.html" class="smp-nav-link">
+                                    ログイン・ロック
                                 </a>
                             </li>
                                                                                                 <li class="smp-nav-nolink">
                                 Connect-CMS紹介
                             </li>
+                                                                                                <li class="smp-nav-link">
+                                <a href="../../../manage/index/index/index.html" class="smp-nav-link">
+                                    お知らせ
+                                </a>
+                            </li>
+                                                                                                <li class="smp-nav-link">
+                                <a href="../../../mypage/index/index/index.html" class="smp-nav-link">
+                                    マイページ
+                                </a>
+                            </li>
                                                             </ul>
                                         <div class="d-md-none">
-                <span class="badge badge-pill badge-secondary mr-2"><a href="../../../blueprint/index.html" class="text-white">設計</a></span>
+                <span class="badge badge-pill badge-secondary mr-2"><a href="../../../function/index.html" class="text-white">機能一覧</a></span>
+<span class="badge badge-pill badge-secondary mr-2"><a href="../../../blueprint/index.html" class="text-white">設計</a></span>
 <span class="badge badge-pill badge-info mr-2"><a href="../../../common/index.html" class="text-white">共通機能</a></span>
 <span class="badge badge-pill badge-danger mr-2"><a href="../../../manage/index.html" class="text-white">管理者</a></span>
 <span class="badge badge-pill badge-primary mr-2"><a href="../../../user/index.html" class="text-white">一般ユーザ</a></span>
 <span class="badge badge-pill badge-success mr-2"><a href="../../../mypage/index.html" class="text-white">マイページ</a></span>
+<span class="badge badge-pill badge-secondary mr-2"><a href="../../../study/index.html" class="text-white">Connect-Study</a></span>
 <!--
 <span class="badge badge-pill badge-warning mr-2">エラー説明</span>
 <span class="badge badge-pill badge-light mr-2">逆引き</span>
@@ -140,8 +152,9 @@
                             <div class="row">
                     <div class="col-lg-4 p-0">
                         <div class="embed-responsive embed-responsive-16by9">
-                                                        <video src="../../../top/index/index/mp4/mizuki/_video.mp4"
+                                                        <video src="../../../top/index/index/mp4/tomoko/_video.mp4"
                                    class="embed-responsive-item"
+                                   poster="../../../top/index/index/mp4/tomoko/_poster.png"
                                    controls>
                             </video>
                                                     </div>
@@ -160,10 +173,10 @@
         <div class="card-header text-white bg-primary">画面</div>
         <div class="card-body">
                             <p>
-                                            【ブログ機能】<br />
+                                            【ブログ・プラグイン】<br />
                     
                     
-                    <img src="../../../top/index/index/images/blog_index.png" class="img-fluid img-manual" style="max-width:980px;"
+                    <img src="../../../top/index/index/images/blog.png" class="img-fluid img-manual" style="max-width:980px;"
                                             >
 
                                             <div class="card bg-light">
@@ -173,28 +186,28 @@
                         </div>
                                     </p>
                             <p>
-                                            【フォトアルバム機能】<br />
+                                            【固定記事・プラグイン】<br />
                     
                     
-                    <img src="../../../top/index/index/images/photoalbum_photo.png" class="img-fluid img-manual" style="max-width:980px;"
+                    <img src="../../../top/index/index/images/content.png" class="img-fluid img-manual" style="max-width:980px;"
                                             >
 
                                             <div class="card bg-light">
                             <div class="card-body">
-                                <ul class="mb-0"><li>フォトアルバム機能は、写真や動画を管理することができます。</li><li>イベントで撮った写真や動画をアルバム形式で表示することができ、楽しい思い出を見やすくできます。</li><li>パスワード付きページやメンバーシップページに配置することで、安心して写真共有もできます。</li></ul>
+                                <ul class="mb-0"><li>サイト上に文字や画像を配置できるプラグインです。例えばヘッダーエリアのバナーなどは固定記事プラグインです。</li></ul>
                             </div>
                         </div>
                                     </p>
                             <p>
-                                            【フォトアルバム機能の動画アルバム】<br />
+                                            【メニュー・プラグイン】<br />
                     
                     
-                    <img src="../../../top/index/index/images/photoalbum_movie.png" class="img-fluid img-manual" style="max-width:980px;"
+                    <img src="../../../top/index/index/images/menu.png" class="img-fluid img-manual" style="max-width:980px;"
                                             >
 
                                             <div class="card bg-light">
                             <div class="card-body">
-                                <ul class="mb-0"><li>フォトアルバム機能で動画を共有している例です。</li></ul>
+                                <ul class="mb-0"><li>ページ設定を元にメニューを表示できるプラグインです。</li></ul>
                             </div>
                         </div>
                                     </p>
@@ -225,7 +238,7 @@
                         </div>
                                     </p>
                             <p>
-                                            【会館カレンダー】<br />
+                                            【開館カレンダー】<br />
                     
                     
                     <img src="../../../top/index/index/images/openingcalendar.png" class="img-fluid img-manual" style="max-width:980px;"
@@ -238,10 +251,88 @@
                         </div>
                                     </p>
                             <p>
+                                            【新着情報】<br />
+                    
+                    
+                    <img src="../../../top/index/index/images/whatsnew.png" class="img-fluid img-manual" style="max-width:980px;"
+                                            >
+
+                                            <div class="card bg-light">
+                            <div class="card-body">
+                                <ul class="mb-0"><li>新着情報を作成できるプラグインです。サイト内のプラグインから新着記事を集めます。</li></ul>
+                            </div>
+                        </div>
+                                    </p>
+                            <p>
+                                            【FAQ】<br />
+                    
+                    
+                    <img src="../../../top/index/index/images/faq.png" class="img-fluid img-manual" style="max-width:980px;"
+                                            >
+
+                                            <div class="card bg-light">
+                            <div class="card-body">
+                                <ul class="mb-0"><li>FAQを作成できるプラグインです。質問と回答をわかりやすく表示できます。</li></ul>
+                            </div>
+                        </div>
+                                    </p>
+                            <p>
+                                            【リンクリスト】<br />
+                    
+                    
+                    <img src="../../../top/index/index/images/linklist.png" class="img-fluid img-manual" style="max-width:980px;"
+                                            >
+
+                                            <div class="card bg-light">
+                            <div class="card-body">
+                                <ul class="mb-0"><li>リンクリストを作成できるプラグインです。よく使うサイトのURLを登録します。</li></ul>
+                            </div>
+                        </div>
+                                    </p>
+                            <p>
+                                            【キャビネット】<br />
+                    
+                    
+                    <img src="../../../top/index/index/images/cabinet.png" class="img-fluid img-manual" style="max-width:980px;"
+                                            >
+
+                                            <div class="card bg-light">
+                            <div class="card-body">
+                                <ul class="mb-0"><li>キャビネット・プラグインは、ファイルの管理にとても便利です。</li></ul>
+                            </div>
+                        </div>
+                                    </p>
+                            <p>
+                                            【フォトアルバム】<br />
+                    
+                    
+                    <img src="../../../top/index/index/images/photoalbum_photo.png" class="img-fluid img-manual" style="max-width:980px;"
+                                            >
+
+                                            <div class="card bg-light">
+                            <div class="card-body">
+                                <ul class="mb-0"><li>フォトアルバム機能は、写真や動画を管理することができます。</li><li>イベントで撮った写真や動画をアルバム形式で表示することができ、楽しい思い出を見やすくできます。</li><li>パスワード付きページやメンバーシップページに配置することで、安心して写真共有もできます。</li></ul>
+                            </div>
+                        </div>
+                                    </p>
+                            <p>
+                                            【フォトアルバムの動画アルバム】<br />
+                    
+                    
+                    <img src="../../../top/index/index/images/photoalbum_movie.png" class="img-fluid img-manual" style="max-width:980px;"
+                                            >
+
+                                            <div class="card bg-light">
+                            <div class="card-body">
+                                <ul class="mb-0"><li>フォトアルバム機能で動画を共有している例です。</li></ul>
+                            </div>
+                        </div>
+                                    </p>
+                            <p>
                                             【データベース】<br />
                     
                     
-                    <img src="../../../top/index/index/images/database_index.png" class="img-fluid img-manual" style="max-width:980px;"
+                    <img src="../../../top/index/index/images/database.png" class="img-fluid img-manual" style="max-width:980px;"
                                             >
 
                                             <div class="card bg-light">
@@ -254,7 +345,7 @@
                                             【フォーム】<br />
                     
                     
-                    <img src="../../../top/index/index/images/form_index.png" class="img-fluid img-manual" style="max-width:980px;"
+                    <img src="../../../top/index/index/images/form.png" class="img-fluid img-manual" style="max-width:980px;"
                                             >
 
                                             <div class="card bg-light">
@@ -264,10 +355,49 @@
                         </div>
                                     </p>
                             <p>
+                                            【アンケート】<br />
+                    
+                    
+                    <img src="../../../top/index/index/images/questionnaire.png" class="img-fluid img-manual" style="max-width:980px;"
+                                            >
+
+                                            <div class="card bg-light">
+                            <div class="card-body">
+                                <ul class="mb-0"><li>項目を自由に作成して、アンケートを取ることができます。</li></ul>
+                            </div>
+                        </div>
+                                    </p>
+                            <p>
+                                            【カウンター】<br />
+                    
+                    
+                    <img src="../../../top/index/index/images/counter.png" class="img-fluid img-manual" style="max-width:980px;"
+                                            >
+
+                                            <div class="card bg-light">
+                            <div class="card-body">
+                                <ul class="mb-0"><li>日ごとの履歴もダウンロードできるカウンターです。</li></ul>
+                            </div>
+                        </div>
+                                    </p>
+                            <p>
+                                            【サイト内検索】<br />
+                    
+                    
+                    <img src="../../../top/index/index/images/search.png" class="img-fluid img-manual" style="max-width:980px;"
+                                            >
+
+                                            <div class="card bg-light">
+                            <div class="card-body">
+                                <ul class="mb-0"><li>サイト内のコンテンツを検索できます。</li></ul>
+                            </div>
+                        </div>
+                                    </p>
+                            <p>
                                             【掲示板】<br />
                     
                     
-                    <img src="../../../top/index/index/images/bbs_index.png" class="img-fluid img-manual" style="max-width:980px;"
+                    <img src="../../../top/index/index/images/bbs.png" class="img-fluid img-manual" style="max-width:980px;"
                                             >
 
                                             <div class="card bg-light">
@@ -280,7 +410,7 @@
                                             【施設予約】<br />
                     
                     
-                    <img src="../../../top/index/index/images/reservationreservation_index.png" class="img-fluid img-manual" style="max-width:980px;"
+                    <img src="../../../top/index/index/images/reservation.png" class="img-fluid img-manual" style="max-width:980px;"
                                             >
 
                                             <div class="card bg-light">
